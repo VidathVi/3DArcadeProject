@@ -3856,6 +3856,8 @@ AnimationClip:
       value: {fileID: 0}
     - time: 0.033333335
       value: {fileID: 2100000, guid: f73b2a7a6527b1b49af18d8e3171c869, type: 2}
+    - time: 0.6333333
+      value: {fileID: 0}
     - time: 0.96666664
       value: {fileID: 0}
     attribute: 'm_Materials.Array.data[2]'
@@ -4914,6 +4916,7 @@ AnimationClip:
     - {fileID: 2100000, guid: 7eb594ab3c5c99048ad8f8f95d035cfa, type: 2}
     - {fileID: 0}
     - {fileID: 2100000, guid: f73b2a7a6527b1b49af18d8e3171c869, type: 2}
+    - {fileID: 0}
     - {fileID: 0}
     - {fileID: 0}
     - {fileID: 0}

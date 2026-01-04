@@ -4604,11 +4604,13 @@ AnimationClip:
   - serializedVersion: 2
     curve:
     - time: 0
+      value: {fileID: 0}
+    - time: 0.23333333
       value: {fileID: 2100000, guid: f73b2a7a6527b1b49af18d8e3171c869, type: 2}
     - time: 0.9
-      value: {fileID: 2100000, guid: f73b2a7a6527b1b49af18d8e3171c869, type: 2}
+      value: {fileID: 0}
     - time: 1.1333333
-      value: {fileID: 2100000, guid: f73b2a7a6527b1b49af18d8e3171c869, type: 2}
+      value: {fileID: 0}
     attribute: 'm_Materials.Array.data[2]'
     path: Rabbit
     classID: 137
@@ -5693,9 +5695,10 @@ AnimationClip:
     - {fileID: 0}
     - {fileID: 2100000, guid: 7eb594ab3c5c99048ad8f8f95d035cfa, type: 2}
     - {fileID: 2100000, guid: 7eb594ab3c5c99048ad8f8f95d035cfa, type: 2}
+    - {fileID: 0}
     - {fileID: 2100000, guid: f73b2a7a6527b1b49af18d8e3171c869, type: 2}
-    - {fileID: 2100000, guid: f73b2a7a6527b1b49af18d8e3171c869, type: 2}
-    - {fileID: 2100000, guid: f73b2a7a6527b1b49af18d8e3171c869, type: 2}
+    - {fileID: 0}
+    - {fileID: 0}
     - {fileID: 0}
     - {fileID: 0}
     - {fileID: 0}

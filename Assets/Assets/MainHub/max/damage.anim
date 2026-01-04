@@ -4394,6 +4394,8 @@ AnimationClip:
   - serializedVersion: 2
     curve:
     - time: 0
+      value: {fileID: 0}
+    - time: 0.033333335
       value: {fileID: 2100000, guid: f73b2a7a6527b1b49af18d8e3171c869, type: 2}
     - time: 0.2
       value: {fileID: 2100000, guid: f73b2a7a6527b1b49af18d8e3171c869, type: 2}
@@ -5413,6 +5415,7 @@ AnimationClip:
     - {fileID: 0}
     - {fileID: 2100000, guid: 38418a6bb23ae3e488a44388b7f1bb8f, type: 2}
     - {fileID: 2100000, guid: 38418a6bb23ae3e488a44388b7f1bb8f, type: 2}
+    - {fileID: 0}
     - {fileID: 0}
     - {fileID: 0}
     - {fileID: 0}
