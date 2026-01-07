@@ -34,6 +34,7 @@ public class Dialogue : MonoBehaviour
     public int[] expression;
     public float textSpeed;
 
+    //assigning flags
     private bool selectA = false;
     private bool selectB = false;
     private bool confirmFlag;
@@ -57,6 +58,7 @@ public class Dialogue : MonoBehaviour
     };
     private bool isViewer = false;
 
+    //dialogue for hiscore which changes based off how many times the user presses the same button
     private int hiScore = 0;
     private String[] hiScore1 = { "..?", "You mean you aren't satisfied by just watching the number go up..?" };
     private String[] hiScore2 = { "...", "There are no rewards for a High Score." };
@@ -65,6 +67,7 @@ public class Dialogue : MonoBehaviour
 
     void Start()
     {
+        //resets everything
         animator.Play("transition_stand");
         topicSelecter.SetActive(false);
         topicInteractions.SetActive(false);
@@ -76,6 +79,7 @@ public class Dialogue : MonoBehaviour
 
     void Update()
     {
+        //handles the confirm icon on the text
         if (confirmFlag)
         {
             confirmIcon.enabled = true;
@@ -85,6 +89,7 @@ public class Dialogue : MonoBehaviour
             confirmIcon.enabled = false;
         }
 
+        //enables mouse control if user is on the Model Viewer
         if (isViewer)
         {
             if (Input.GetMouseButton(0)){
@@ -92,7 +97,7 @@ public class Dialogue : MonoBehaviour
             }
         }
 
-
+        //Continuation of Certain dialogues that have a button prompt
         if (clawFlag2)
         {
             index = 0;
@@ -359,6 +364,7 @@ public class Dialogue : MonoBehaviour
             placeFlag2 = false;
         }
 
+        //
         if (Input.GetMouseButtonDown(0) && textComponent.enabled == true)
         {
             if (textComponent.text == dialogue[index])

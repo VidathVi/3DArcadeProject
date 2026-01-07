@@ -28,6 +28,7 @@ public class opening : MonoBehaviour
 
     void Start()
     {
+        //initializes the dialogue
         dialogue = new string[] {
                     "Oh hey, a new face.",
                     "Welcome to the arcade.",
@@ -42,21 +43,23 @@ public class opening : MonoBehaviour
         expression = new int[] { 1, 11, 1, 1, 1, 1, 1, 1, 5 };
     }
 
-    // Update is called once per frame
     void Update()
     {
+        //checks if user has interacted with Max
         if (Input.GetKeyDown(KeyCode.E) && interactButton.activeSelf == true)
         {
             maxFlag = true;
         }
         if (maxFlag)
         {
+            //disables UI
             GetComponent<Collider>().enabled = false;
             interactButton.SetActive(false);
             moveText.text = "";
             dialogueBox.SetActive(true);
             player.SetActive(false);
         }
+        //controls dialogue mouse input
         if (Input.GetMouseButtonDown(0) && textComponent.enabled == true && maxFlag)
         {
             if (textComponent.text == dialogue[index])
