@@ -3291,106 +3291,14 @@ AnimationClip:
   - serializedVersion: 2
     curve:
     - time: 0
-      value: {fileID: 0}
+      value: {fileID: 2100000, guid: 38418a6bb23ae3e488a44388b7f1bb8f, type: 2}
+    - time: 2
+      value: {fileID: 2100000, guid: d197e9d727204894c8b04a20f50564d3, type: 2}
+    - time: 2.0333333
+      value: {fileID: 2100000, guid: 38418a6bb23ae3e488a44388b7f1bb8f, type: 2}
     - time: 3.8
-      value: {fileID: 0}
+      value: {fileID: 2100000, guid: 38418a6bb23ae3e488a44388b7f1bb8f, type: 2}
     attribute: 'm_Materials.Array.data[1]'
-    path: Rabbit
-    classID: 137
-    script: {fileID: 0}
-    flags: 2
-  - serializedVersion: 2
-    curve:
-    - time: 0
-      value: {fileID: 0}
-    - time: 1.9666667
-      value: {fileID: 0}
-    - time: 2
-      value: {fileID: 2100000, guid: f73b2a7a6527b1b49af18d8e3171c869, type: 2}
-    - time: 2.0333333
-      value: {fileID: 0}
-    - time: 3.8
-      value: {fileID: 0}
-    attribute: 'm_Materials.Array.data[2]'
-    path: Rabbit
-    classID: 137
-    script: {fileID: 0}
-    flags: 2
-  - serializedVersion: 2
-    curve:
-    - time: 0
-      value: {fileID: 0}
-    - time: 1.9666667
-      value: {fileID: 0}
-    - time: 2
-      value: {fileID: 0}
-    - time: 2.0333333
-      value: {fileID: 0}
-    - time: 3.8
-      value: {fileID: 0}
-    attribute: 'm_Materials.Array.data[3]'
-    path: Rabbit
-    classID: 137
-    script: {fileID: 0}
-    flags: 2
-  - serializedVersion: 2
-    curve:
-    - time: 0
-      value: {fileID: 0}
-    - time: 1.9666667
-      value: {fileID: 0}
-    - time: 2
-      value: {fileID: 0}
-    - time: 2.0333333
-      value: {fileID: 0}
-    - time: 3.8
-      value: {fileID: 0}
-    attribute: 'm_Materials.Array.data[4]'
-    path: Rabbit
-    classID: 137
-    script: {fileID: 0}
-    flags: 2
-  - serializedVersion: 2
-    curve:
-    - time: 0
-      value: {fileID: 0}
-    - time: 1.9666667
-      value: {fileID: 0}
-    - time: 2
-      value: {fileID: 0}
-    - time: 2.0333333
-      value: {fileID: 0}
-    - time: 3.8
-      value: {fileID: 0}
-    attribute: 'm_Materials.Array.data[5]'
-    path: Rabbit
-    classID: 137
-    script: {fileID: 0}
-    flags: 2
-  - serializedVersion: 2
-    curve:
-    - time: 0
-      value: {fileID: 2100000, guid: 38418a6bb23ae3e488a44388b7f1bb8f, type: 2}
-    - time: 1.9666667
-      value: {fileID: 2100000, guid: 38418a6bb23ae3e488a44388b7f1bb8f, type: 2}
-    - time: 2
-      value: {fileID: 0}
-    - time: 2.0333333
-      value: {fileID: 2100000, guid: 38418a6bb23ae3e488a44388b7f1bb8f, type: 2}
-    - time: 3.8
-      value: {fileID: 2100000, guid: 38418a6bb23ae3e488a44388b7f1bb8f, type: 2}
-    attribute: 'm_Materials.Array.data[6]'
-    path: Rabbit
-    classID: 137
-    script: {fileID: 0}
-    flags: 2
-  - serializedVersion: 2
-    curve:
-    - time: 0
-      value: {fileID: 0}
-    - time: 3.8
-      value: {fileID: 0}
-    attribute: 'm_Materials.Array.data[7]'
     path: Rabbit
     classID: 137
     script: {fileID: 0}
@@ -3558,60 +3466,6 @@ AnimationClip:
     - serializedVersion: 2
       path: 1845302191
       attribute: 1
-      script: {fileID: 0}
-      typeID: 137
-      customType: 21
-      isPPtrCurve: 1
-      isIntCurve: 0
-      isSerializeReferenceCurve: 0
-    - serializedVersion: 2
-      path: 1845302191
-      attribute: 2
-      script: {fileID: 0}
-      typeID: 137
-      customType: 21
-      isPPtrCurve: 1
-      isIntCurve: 0
-      isSerializeReferenceCurve: 0
-    - serializedVersion: 2
-      path: 1845302191
-      attribute: 3
-      script: {fileID: 0}
-      typeID: 137
-      customType: 21
-      isPPtrCurve: 1
-      isIntCurve: 0
-      isSerializeReferenceCurve: 0
-    - serializedVersion: 2
-      path: 1845302191
-      attribute: 4
-      script: {fileID: 0}
-      typeID: 137
-      customType: 21
-      isPPtrCurve: 1
-      isIntCurve: 0
-      isSerializeReferenceCurve: 0
-    - serializedVersion: 2
-      path: 1845302191
-      attribute: 5
-      script: {fileID: 0}
-      typeID: 137
-      customType: 21
-      isPPtrCurve: 1
-      isIntCurve: 0
-      isSerializeReferenceCurve: 0
-    - serializedVersion: 2
-      path: 1845302191
-      attribute: 6
-      script: {fileID: 0}
-      typeID: 137
-      customType: 21
-      isPPtrCurve: 1
-      isIntCurve: 0
-      isSerializeReferenceCurve: 0
-    - serializedVersion: 2
-      path: 1845302191
-      attribute: 7
       script: {fileID: 0}
       typeID: 137
       customType: 21
@@ -4384,35 +4238,10 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     pptrCurveMapping:
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 2100000, guid: f73b2a7a6527b1b49af18d8e3171c869, type: 2}
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
+    - {fileID: 2100000, guid: 38418a6bb23ae3e488a44388b7f1bb8f, type: 2}
+    - {fileID: 2100000, guid: d197e9d727204894c8b04a20f50564d3, type: 2}
     - {fileID: 2100000, guid: 38418a6bb23ae3e488a44388b7f1bb8f, type: 2}
     - {fileID: 2100000, guid: 38418a6bb23ae3e488a44388b7f1bb8f, type: 2}
-    - {fileID: 0}
-    - {fileID: 2100000, guid: 38418a6bb23ae3e488a44388b7f1bb8f, type: 2}
-    - {fileID: 2100000, guid: 38418a6bb23ae3e488a44388b7f1bb8f, type: 2}
-    - {fileID: 0}
-    - {fileID: 0}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
