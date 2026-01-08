@@ -1,6 +1,6 @@
 using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.UIElements;
+using UnityEngine.SceneManagement;
 //using static UnityEditor.PlayerSettings;
 
 public class CraneMovement: MonoBehaviour
@@ -26,6 +26,12 @@ public class CraneMovement: MonoBehaviour
     private Vector3 origin = new Vector3(0.35f, 1.45f, 0.35f);
 
     public float speed = 0.3f;
+
+    void Awake()
+    {
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+    }
 
     void Update()
     {
@@ -143,5 +149,4 @@ public class CraneMovement: MonoBehaviour
         Arm2.transform.Rotate(30, 0, 0);
         Arm3.transform.Rotate(0, 0, 30);
     }
-
 }

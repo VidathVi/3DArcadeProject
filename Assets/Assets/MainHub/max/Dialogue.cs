@@ -1,11 +1,10 @@
-using UnityEngine;
-using TMPro;
-using System.Collections;
-using UnityEngine.InputSystem;
 using System;
+using System.Collections;
+using TMPro;
+using UnityEngine;
+using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
-using Unity.VisualScripting;
-using TMPro.EditorUtilities;
 public class Dialogue : MonoBehaviour
 {
     public Transform Camera;
@@ -65,9 +64,13 @@ public class Dialogue : MonoBehaviour
     private String[] hiScore3 = { "Let me clarify.", "None of the minigames give you a reward for a High Score." };
     private String[] hiScore4 = { "...", "No." };
 
-    void Start()
+    void Awake()
     {
         //resets everything
+
+        // Unlock mouse cursor for the restart button
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
         animator.Play("transition_stand");
         topicSelecter.SetActive(false);
         topicInteractions.SetActive(false);
@@ -228,7 +231,7 @@ public class Dialogue : MonoBehaviour
             if (selectA)
             {
                 dialogue = new string[] {
-                    "It'll be on a set path that fluctuates between speeds.",
+                    "It'll chuck incredibly fast shots at you.",
                     "You've got to time your shots right for this one."
                 };
                 expression = new int[] { 1, 1, 1 };
@@ -434,7 +437,7 @@ public class Dialogue : MonoBehaviour
         initialText.enabled = false;
         textComponent.enabled = true;
         index = 0;
-        dialogue = new string[] {"You can find the Target Practice Machine right behind you.",
+        dialogue = new string[] {"You can find the Target Practice Machine right behind you, to the left.",
                 "Use the Mouse to look around, and press the Left Mouse Button to fire a shot.",
                 "Don't go all trigger happy though, you've got a limited supply of bullets.",
                 "Don't worry, you can always press R to reset your state.",
@@ -450,7 +453,7 @@ public class Dialogue : MonoBehaviour
         initialText.enabled = false;
         textComponent.enabled = true;
         index = 0;
-        dialogue = new string[] {"You should find the Air Hockey Table right next to the Target Practice Machine.",
+        dialogue = new string[] {"You should find the Air Hockey machine right next to the Flappy Bird Machine; to your right.",
                 "This one's simple. Move your Mouse to control the pusher.",
                 "You can use the pusher to push the puck around."
                 };
@@ -703,5 +706,10 @@ public class Dialogue : MonoBehaviour
     public void LegoAnimation()
     {
         legoModels[legoIndex].GetComponentInChildren<Animator>().Play("animation");
+    }
+
+    public void leaveScene()
+    {
+        SceneManager.LoadScene("MainHub");
     }
 }

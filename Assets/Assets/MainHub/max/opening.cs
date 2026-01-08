@@ -1,14 +1,14 @@
-using UnityEngine;
-using TMPro;
-using System.Collections;
-using UnityEngine.InputSystem;
 using System;
+using System.Collections;
+using TMPro;
+using UnityEngine;
+using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
-using Unity.VisualScripting;
-using TMPro.EditorUtilities;
 
 public class opening : MonoBehaviour
 {
+    public GameObject maxCam;
     public GameObject interactButton;
     public GameObject skipButton;
     public GameObject dialogueBox;
@@ -22,7 +22,7 @@ public class opening : MonoBehaviour
     public string[] dialogue;
     public int[] expression;
     public float textSpeed;
-    private bool confirmFlag;
+    private bool confirmFlag = false;
     private int index;
     private bool maxFlag = false;
 
@@ -57,6 +57,7 @@ public class opening : MonoBehaviour
             interactButton.SetActive(false);
             moveText.text = "";
             dialogueBox.SetActive(true);
+            maxCam.SetActive(true);
             player.SetActive(false);
         }
         //controls dialogue mouse input
@@ -107,12 +108,12 @@ public class opening : MonoBehaviour
         }
         else
         {
-            //Switch scenes here
             animator.SetInteger("Expression", 1);
             animator.Update(0); //forces the animator to instantly start an animation
             dialogue = null;
             textComponent.enabled = false;
             initialText.enabled = true;
+            SceneManager.LoadScene("MainHub");
         }
     }
 

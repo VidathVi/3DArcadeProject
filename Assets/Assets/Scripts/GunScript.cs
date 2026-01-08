@@ -12,16 +12,12 @@ public class GunScript : MonoBehaviour
 
     void Update()
     {
+        // Stop firing if the game is over
+        if (GameManager.Instance != null && GameManager.Instance.isGameOver) return;
+
         if (Input.GetKeyDown(KeyCode.Mouse0) && bulletsFired < maxBullets)
         {
             FireGun();
-        }
-
-        // Optional: Reload with R key
-        if (Input.GetKeyDown(KeyCode.R))
-        {
-            bulletsFired = 0;
-            Debug.Log("Reloaded!");
         }
     }
 
@@ -33,6 +29,12 @@ public class GunScript : MonoBehaviour
         Destroy(newBullet, bulletLifeTime);
 
         bulletsFired++;
-        Debug.Log("Bullets fired: " + bulletsFired);
+
+        // Calculate remaining bullets and tell GameManager
+        int remaining = maxBullets - bulletsFired;
+        if (GameManager.Instance != null)
+        {
+            GameManager.Instance.CheckLossCondition(remaining);
+        }
     }
 }
